@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="myapps.screenbuddy.CharacterFragment">
+
+    <Spinner
+        android:id="@+id/character_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/character_new_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/new_chara"
+        android:onClick="onNewItemClicked"/>
+
+    <Button
+        android:id="@+id/character_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/character_new_btn"
+        android:onClick="onSaveClicked"
+        android:text="@string/save_chara"/>
+
+    <Button
+        android:id="@+id/character_change_preview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onPreviewImageClicked"
+        android:text="@string/change_preview_text"/>
+
+</RelativeLayout>

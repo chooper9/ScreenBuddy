@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="myapps.screenbuddy.ImageFragment">
+
+    <Button
+        android:id="@+id/load_images_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/button_margin"
+        android:text="@string/load_images_text"
+        android:onClick="onLoadImagesClicked"/>
+
+    <GridView
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:columnWidth="80dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="6dp"
+        android:stretchMode="none"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/load_images_btn"
+        android:gravity="center"/>
+
+</RelativeLayout>
