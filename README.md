@@ -1,2 +1,4 @@
 #ScreenBuddy
-This application is meant to allow users to create and customize their own animations which would be played in a widget, either on the home screen or the lock screen.
+This application is meant to allow users to create and customize their own animations which would be played in a widget, either on the home screen or the lock screen. Currently, I have excluded the widget itself due to several complications - many (if not all) of which are due to the fact that widgets aren't meant to be updated very frequently, nonetheless animated.
+
+The app has three tabs: Character, Animations, and Images. In the Character tab, the user can create a new character (defined by image resources and animation sets) and save the current character to a SQLite database on the device. In the Animations tab, the user can create new animations for the selected character and add images to the animation from the character's resource images. Finally, in the Images tab, the user can add images to the character from the device's image gallery.
